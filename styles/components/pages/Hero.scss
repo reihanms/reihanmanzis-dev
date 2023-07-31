@@ -1,0 +1,21 @@
+.x-hero-section {
+  background: linear-gradient(180deg, #4af4ff 0%, rgba(217, 217, 217, 0) 100%);
+  position: relative;
+  .x-content {
+    padding-top: 7rem;
+    padding-left: 150px;
+    padding-right: 150px;
+    .x-header-text {
+      letter-spacing: 1rem;
+    }
+    .x-absolute-content {
+      position: absolute;
+      top: 90%;
+      left: 85%;
+      transform: translate(-85%, -90%);
+      .x-bulb-text {
+        transform: rotate(-18.087deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.x-tooltip-component {
+  .tooltip-inner {
+    background-color: var(--pr-00);
+    box-shadow: var(--drop-shadow-md);
+  }
+  .tooltip-arrow::before {
+    border-right-color: var(--pr-00);
+  }
+}

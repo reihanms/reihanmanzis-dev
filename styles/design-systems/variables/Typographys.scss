@@ -1,0 +1,71 @@
+$display: (
+  'font-size': (
+    'sm': 44px,
+    'lg': 52px,
+  ),
+  'line-height': (
+    'sm': 48px,
+    'lg': 56px,
+  ),
+);
+
+$heading: (
+  "font-size": (
+    "h5": 16px,
+    "h4": 18px,
+    "h3": 24px,
+    "h2": 28px,
+    "h1": 36px
+  ),
+  "line-height": (
+    "h5": 20px,
+    "h4": 23px,
+    "h3": 32px,
+    "h2": 34px,
+    "h1": 46px,
+  ),
+);
+
+$paragraph: (
+  "font-size": (
+    "p8": 8px,
+    "p10": 10px,
+    "p12": 12px,
+    "p14": 14px,
+    "p16": 16px,
+    "p18": 18px,
+  ),
+  "line-height": (
+    "p8": 12px,
+    "p10": 15px,
+    "p12": 22px,
+    "p14": 22px,
+    "p16": 26px,
+    "p18": 28px,
+  ),
+);
+
+$label: (
+  'font-size': (
+    'l8': 8px,
+    'l10': 10px,
+    'l12': 12px,
+    'l14': 14px,
+    'l16': 16px,
+  ),
+  'line-height': (
+    'l8': 12px,
+    'l10': 11px,
+    'l12': 15px,
+    'l14': 17px,
+    'l16': 20px,
+  ),
+);
+
+
+$line-height: (
+  "xs": 12px,
+  "sm": 16px,
+  "md": 20px,
+  "lg": 24px,
+)

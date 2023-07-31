@@ -1,0 +1,48 @@
+.x-mywork-section {
+  padding-left: 150px;
+  padding-right: 150px;
+  .x-ideabox {
+    background: linear-gradient(
+      138deg,
+      rgba(74, 244, 255, 0.57) 0%,
+      rgba(13, 107, 120, 0.15) 61.74%
+    );
+    padding: 1rem 2rem;
+    background: linear-gradient(
+      138deg,
+      rgba(74, 244, 255, 0.57) 0%,
+      rgb(255, 255, 255) 61.74%
+    ) padding-box,
+      linear-gradient(to right, rgb(0, 222, 230), rgb(0, 147, 142)) border-box;
+    border-radius: 20px;
+    border: 6px solid transparent;
+  }
+	.x-irecruitment {
+    padding: 1rem 2rem;
+    background: linear-gradient(138deg, rgba(244, 255, 178, 0.57) 0%, rgba(255, 255, 255, 0.99) 61.93%) padding-box,
+      linear-gradient(to right, rgb(252, 255, 176), rgb(222, 224, 112)) border-box;
+    border-radius: 20px;
+    border: 6px solid transparent;
+	}
+	.x-amoebapage {
+    padding: 1rem 2rem;
+    background: linear-gradient(138deg, rgba(48, 48, 48, 0.57) 0%, rgba(255, 255, 255, 0.99) 61.93%) padding-box,
+      linear-gradient(to right, rgb(42, 42, 42), rgb(120, 120, 120)) border-box;
+    border-radius: 20px;
+    border: 6px solid transparent;
+	}
+	.x-image-slide-container {
+		padding-left: 2rem;
+		overflow-x: hidden;
+    cursor: grab;
+	}
+  .x-work-img {
+    pointer-events: none;
+  }
+	.x-production {
+		background-color: var(--palette-2);
+		width: fit-content;
+		padding : 1rem;
+		border-radius: 20px;
+	}
+}

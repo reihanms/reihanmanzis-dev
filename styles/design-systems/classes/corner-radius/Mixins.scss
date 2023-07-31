@@ -1,0 +1,3 @@
+@mixin cornerRadius($size) {
+  border-radius: map-get($corner-radius, $size);
+}

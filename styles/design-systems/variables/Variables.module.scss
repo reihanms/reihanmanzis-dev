@@ -1,0 +1,16 @@
+$design-system-variables: (
+  // typographys
+  "defaultFont": "roboto",
+
+  // input component
+  "dangerColor": "acor-600",
+  "successColor": "agr-600",
+  "inputColor": "pr-1200",
+  "inputBorderColor": "pr-300"
+);
+
+:export {
+  @each $variable, $value in $design-system-variables {
+    #{unquote($variable)}: unquote($value);
+  }
+}

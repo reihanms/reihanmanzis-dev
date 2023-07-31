@@ -1,0 +1,27 @@
+.x-workexp-section {
+  background: linear-gradient(180deg, #011a24 45.2%, #00618a 81.61%);
+  .x-workexp-content {
+    color: var(--pr-00);
+    padding-top: 6rem;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    .x-telkom {
+      padding: 1rem 2rem;
+      background: linear-gradient(
+            138deg,
+            rgba(74, 255, 240, 0.57) 0%,
+            #004360 61.74%
+          )
+          padding-box,
+        linear-gradient(to right, rgb(0, 222, 230), rgb(0, 147, 142)) border-box;
+      border-radius: 20px;
+      border: 6px solid transparent;
+    }
+    .x-position {
+      padding: 0.3rem 1rem;
+      background-color: var(--palette-2);
+      border-radius: 20px;
+    }
+  }
+}

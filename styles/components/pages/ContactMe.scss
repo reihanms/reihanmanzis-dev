@@ -1,0 +1,25 @@
+.x-contactMe-section {
+  background-color: #001a41;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .x-contactMe-content {
+    padding-left: 150px;
+    padding-right: 150px;
+    .x-header-text {
+      background: linear-gradient(141deg, #fff 0%, #4af4ff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .x-me {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+    transform: translate(-80%, -75%);
+  }
+}

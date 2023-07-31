@@ -1,0 +1,11 @@
+@each $size, $size-value in $shadow {
+  .shadow-#{$size} { @include shadow($size) };
+}
+
+@each $size, $size-value in $drop-shadow {
+  .drop-shadow-#{$size} { @include dropShadow($size) };
+}
+
+@each $size, $size-value in $blur {
+  .blur-#{$size} { @include blur($size) };
+}

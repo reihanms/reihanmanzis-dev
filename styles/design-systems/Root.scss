@@ -1,0 +1,29 @@
+:root {
+  @each $color, $color-value in $colors {
+    --#{$color}: #{$color-value};
+  }
+
+  @each $size, $size-value in $corner-radius {
+    --corner-radius-#{$size}: #{$size-value};
+  }
+
+  // @each $size, $size-value in $line-height {
+  //   --line-height-#{$size}: #{$size-value};
+  // }
+
+  @each $size, $size-value in $shadow {
+    --shadow-#{$size}: #{$size-value};
+  }
+
+  @each $size, $size-value in $drop-shadow {
+    --drop-shadow-#{$size}: #{$size-value};
+  }
+
+  @each $size, $size-value in $blur {
+    --blur-#{$size}: #{$size-value};
+  }
+
+  @each $space, $space-value in $spacing {
+    --space-#{$space}: #{$space-value};
+  }
+}

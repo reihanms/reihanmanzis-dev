@@ -1,0 +1,7 @@
+@each $color, $value in $colors {
+  .#{$color} { @include color($color); }
+  .bg-#{$color} { @include backgroundColor($color); }
+  .fill-#{$color} { @include fill($color); }
+  .stroke-#{$color} { @include stroke($color); }
+  .border-#{$color} { @include borderColor($color); }
+}

@@ -1,0 +1,11 @@
+@mixin shadow($size) {
+  box-shadow: map-get($shadow, $size);
+}
+
+@mixin dropShadow($size) {
+  box-shadow: map-get($drop-shadow, $size);
+}
+
+@mixin blur($size) {
+  box-shadow: map-get($blur, $size);
+}

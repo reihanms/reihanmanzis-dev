@@ -1,0 +1,43 @@
+@each $size, $size-value in map-get($display, 'font-size') {
+  .display-#{$size} { @include fontSize($display, $size); }
+}
+
+@each $type in map-keys($fonts) {
+  @each $weight, $weight-value in map-get($fonts, $type) {
+    .font-#{$type}-#{$weight} {
+      @include fontType($type, $weight);
+    }
+  }
+}
+
+@each $size, $size-value in map-get($heading, "font-size") {
+  .heading-#{$size} {
+    @include fontSize($heading, $size);
+  }
+}
+
+@each $size, $size-value in map-get($paragraph, "font-size") {
+  .paragraph-#{$size} { @include fontSize($paragraph, $size); }
+}
+
+@each $size, $size-value in map-get($label, 'font-size') {
+  .label-#{$size} {
+    @include fontSize($label, $size);
+    @each $font, $font-value in $fonts {
+      @each $weight, $weight-value in map-get($fonts, $font) {
+        &-#{$font}-#{$weight} {
+          @include fontSize($label, $size);
+          @include fontType($font, $weight);
+        }
+      }
+    }
+  }
+}
+
+// .line-height {
+//   @each $key, $value in $line-height {
+//     &-#{$key} {
+//       @include lineHeight($key);
+//     }
+//   }
+// }

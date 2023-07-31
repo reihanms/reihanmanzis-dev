@@ -1,0 +1,19 @@
+@mixin color($color) {
+  color: map-get($colors, $color);
+}
+
+@mixin backgroundColor($color) {
+  background-color: map-get($colors, $color) !important;
+}
+
+@mixin fill($color) {
+  fill: map-get($colors, $color);
+}
+
+@mixin stroke($color) {
+  stroke: map-get($colors, $color);
+}
+
+@mixin borderColor($color) {
+  border-color: map-get($colors, $color) !important;
+}

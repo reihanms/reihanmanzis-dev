@@ -1,0 +1,3 @@
+@each $size, $size-value in $corner-radius {
+  .corner-radius-#{$size} { @include cornerRadius($size) }
+}

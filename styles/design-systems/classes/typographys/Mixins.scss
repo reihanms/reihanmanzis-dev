@@ -1,0 +1,28 @@
+@mixin fontType($type: $default-font, $weight /* default font based on globals */) {
+  font-family: map-get($fonts, $type, $weight);
+}
+
+@mixin fontSize($type, $size) {
+  font-size: map-get($type, "font-size", $size);
+  line-height: map-get($type, "line-height", $size);
+  letter-spacing: map-get($type, "letter-spacing", $size);
+}
+
+@mixin lineHeight($size) {
+  line-height: map-get($line-height, $size);
+}
+
+@mixin heading($size, $weight: "normal", $type: $default-font) {
+  @include fontSize($heading, $size);
+  @include fontType($type, $weight);
+}
+
+@mixin paragraph($size, $weight: "normal", $type: $default-font) {
+  @include fontSize($paragraph, $size);
+  @include fontType($type, $weight);
+}
+
+@mixin label($size, $weight: "normal", $type: $default-font) {
+  @include fontSize($label, $size);
+  @include fontType($type, $weight);
+}
