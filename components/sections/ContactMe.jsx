@@ -51,9 +51,7 @@ const ContactMe = () => {
             transition={{ duration: 0.5 }}
           >
             <Heading
-              fontSize="90px"
-              lineHeight="90px"
-              className="x-header-text font-fredoka-bold"
+              className="x-header-text-contact font-fredoka-bold"
               text="Lets Open the door to collaboration and create something extraordinary together!"
             />
           </motion.div>

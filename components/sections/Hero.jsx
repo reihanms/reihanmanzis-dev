@@ -74,8 +74,6 @@ const Hero = () => {
             transition={{ duration: 0.5 }} 
           >
             <Heading
-              fontSize="100px"
-              lineHeight="100px"
               className="x-header-text font-fredoka-bold"
               color="palette-2"
               text="From Concept to Creation: Unleashing Web Wonders"
@@ -88,8 +86,7 @@ const Hero = () => {
             transition={{ delay: 2, duration: 0.5 }} 
           >
             <Paragraph
-              fontSize="25px"
-              className="font-fredoka-normal"
+              className="x-description-text font-fredoka-normal"
               color="palette-2"
               width="65%"
               lineHeight="32px"
@@ -112,7 +109,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 2.5, duration : 0.2 }} 
             >
-              <Image src={Nextjs} alt="nextjs" />
+              <Image src={Nextjs} alt="nextjs" className="x-skillset" />
             </motion.div>
             <motion.div
               ref={ref}
@@ -120,7 +117,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 2.7, duration : 0.2 }} 
             >
-              <Image src={Reactjs} alt="nextjs" />
+              <Image src={Reactjs} alt="nextjs" className="x-skillset" />
             </motion.div>
             <motion.div
               ref={ref}
@@ -128,7 +125,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 2.8, duration : 0.2 }} 
             >
-              <Image src={Vue} alt="nextjs" />
+              <Image src={Vue} alt="nextjs" className="x-skillset" />
             </motion.div>
             <motion.div
               ref={ref}
@@ -136,7 +133,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 2.9, duration : 0.2 }} 
             >
-              <Image src={Scss} alt="nextjs" />
+              <Image src={Scss} alt="nextjs" className="x-skillset" />
             </motion.div>
             <motion.div
               ref={ref}
@@ -144,7 +141,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 3, duration : 0.2 }} 
             >
-              <Image src={Tailwind} alt="nextjs" />
+              <Image src={Tailwind} alt="nextjs" className="x-skillset" />
             </motion.div>
             <motion.div
               ref={ref}
@@ -152,7 +149,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 3.1, duration : 0.2 }} 
             >
-              <Image src={MaterialUi} alt="nextjs" />
+              <Image src={MaterialUi} alt="nextjs" className="x-skillset" />
             </motion.div>
             <motion.div
               ref={ref}
@@ -160,7 +157,7 @@ const Hero = () => {
               animate={controls} 
               transition={{ delay: 3.2, duration : 0.2 }} 
             >
-              <Image src={Laravel} alt="nextjs" />
+              <Image src={Laravel} alt="nextjs" className="x-skillset" />
             </motion.div>
           </Div>
           <motion.div
@@ -173,9 +170,9 @@ const Hero = () => {
               src={Lamp}
               alt="bulb"
               style={{ transform: "rotate(-6.047deg)" }}
+              className="x-bulb"
             />
             <Paragraph
-              fontSize="20px"
               className="x-bulb-text font-fredoka-normal"
               color="palette-2"
               text="turning ideas into delightful digital experiences!"

@@ -52,8 +52,7 @@ const WorkExp = () => {
                 transition={{ duration: 0.5 }}
               >
                 <Heading
-                  fontSize="50px"
-                  className="font-fredoka-bold"
+                  className="x-header-text-exp font-fredoka-bold"
                   color="pr-00"
                   text="⚒️ Work Experiences"
                   style={{ letterSpacing: "5px" }}
@@ -61,7 +60,7 @@ const WorkExp = () => {
               </motion.div>
               <motion.div
                 ref={ref}
-                initial={{ opacity: 0, x: 100 }}
+                initial={{ opacity: 0, x: 10 }}
                 animate={controls}
                 transition={{ duration: 0.5 }}
               >
@@ -222,12 +221,11 @@ const WorkExp = () => {
               <Div flex column gap={4}>
                 <Div flex row between alignCenter>
                   <Div flex alignCenter gap={2}>
-                    <Image src={Telkomsel} alt="amoebaLogo" />
+                    <Image src={Telkomsel} alt="amoebaLogo" className="x-telkomsel-logo" />
                     <Div>
                       <Paragraph
-                        fontSize="25px"
                         text="Telekomunikasi Selular"
-                        className="font-poppins-bold"
+                        className="x-text-telkomsel font-poppins-bold"
                         marginless
                       />
                       <Paragraph

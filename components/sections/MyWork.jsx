@@ -97,7 +97,7 @@ const MyWork = () => {
           ref={ref}
           initial={{ opacity: 0, y: 100 }}
           animate={controls2}
-          transition={{ duration: 0.5 }}
+          transition={{delay : 0.5, duration: 0.5 }}
         >
           <Div className="x-ideabox">
             <Div flex column gap={4}>
@@ -204,7 +204,7 @@ const MyWork = () => {
         <Spacer size={50} />
         <Div className="x-irecruitment">
           <Div flex column gap={4}>
-            <Image src={Telkomsel} alt="irec-logo" />
+            <Image src={Telkomsel} alt="irec-logo" className="x-small-logo" />
             <Paragraph
               fontSize="20px"
               className="font-fredoka-normal"
@@ -310,7 +310,7 @@ const MyWork = () => {
         <Spacer size={50} />
         <Div className="x-amoebapage">
           <Div flex column gap={4}>
-            <Image src={Amoeba} alt="irec-logo" />
+            <Image src={Amoeba} alt="amoeba-logo" className="x-small-logo"  />
             <Paragraph
               fontSize="20px"
               className="font-fredoka-normal"

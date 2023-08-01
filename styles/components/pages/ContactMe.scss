@@ -1,25 +1,65 @@
 .x-contactMe-section {
   background-color: #001a41;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   .x-contactMe-content {
-    padding-left: 150px;
-    padding-right: 150px;
-    .x-header-text {
+    .x-header-text-contact {
       background: linear-gradient(141deg, #fff 0%, #4af4ff 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
   }
+}
+
+/* Mobile breakpoint (up to 600px) */
+@media screen and (max-width: 600px) {
+  .x-contactMe-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .x-header-text-contact {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+/* Tablet breakpoint (601px to 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .x-contactMe-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .x-header-text-contact {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+/* Desktop breakpoint (901px and above) */
+@media screen and (min-width: 901px) {
+  .x-contactMe-content {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .x-header-text-contact {
+    font-size: 90px;
+    line-height: 90px;
+  }
   .x-me {
     position: absolute;
     top: 80%;
     left: 75%;
     transform: translate(-80%, -75%);
+  }
+  .x-contactMe-section {
+    height: 100vh;
   }
 }
