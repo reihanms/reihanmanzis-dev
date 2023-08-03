@@ -16,15 +16,18 @@
     padding-right: 0;
   }
   .x-header-text {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: xx-large;
+    width: 100%;
   }
   .x-description-text {
     font-size: 20px;
   }
   .x-skillset {
-    width: 45px;
-    height: 45px;
+    width: 100%;
+    height: 100%;
+  }
+  .x-skillset-container {
+    width: 100%;
   }
   .x-bulb {
     width: 80px;
@@ -34,6 +37,7 @@
     font-size: 15px;
   }
   .x-absolute-content {
+    display: none;
     position: absolute;
     top: 90%;
     left: 90%;

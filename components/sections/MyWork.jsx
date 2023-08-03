@@ -75,6 +75,7 @@ const MyWork = () => {
   return (
     <Container>
       <motion.div ref={ref}>
+      <Spacer size={120}/>
       <Div className="x-mywork-section">
         <motion.div
           ref={ref}
@@ -84,6 +85,7 @@ const MyWork = () => {
         >
           <Heading
             fontSize="50px"
+            mobileFontSize="40px"
             className="font-fredoka-bold"
             color="palette-2"
             text="🧑‍💻 My Work"
@@ -101,7 +103,7 @@ const MyWork = () => {
         >
           <Div className="x-ideabox">
             <Div flex column gap={4}>
-              <Image src={Ideabox} alt="ideabox-logo" />
+              <Image src={Ideabox} alt="ideabox-logo" className="x-small-logo" />
               <Paragraph
                 fontSize="20px"
                 className="font-fredoka-normal"
@@ -191,11 +193,11 @@ const MyWork = () => {
                 color="palette-2"
                 text="Technologies Used"
               />
-              <Div flex row gap={2}>
-                <Image src={Nextjs} alt="nextjs" />
-                <Image src={MySql} alt="mysql" />
-                <Image src={ReactJs} alt="react" />
-                <Image src={Laravel} alt="laravel" />
+              <Div className="x-technology-used" flex row gap={2}>
+                <Image src={Nextjs} alt="nextjs" className="x-technologies" />
+                <Image src={MySql} alt="mysql" className="x-technologies" />
+                <Image src={ReactJs} alt="react" className="x-technologies" />
+                <Image src={Laravel} alt="laravel" className="x-technologies" />
               </Div>
             </Div>
           </Div>
@@ -296,12 +298,12 @@ const MyWork = () => {
               color="palette-2"
               text="Technologies Used"
             />
-            <Div flex row gap={2}>
-              <Image src={Nextjs} alt="nextjs" />
-              <Image src={Postgre} alt="postgre" />
-              <Image src={ReactJs} alt="react" />
-              <Image src={Mui} alt="mui" />
-              <Image src={NestJs} alt="nest" />
+            <Div className="x-technology-used" flex row gap={2}>
+              <Image src={Nextjs} alt="nextjs" className="x-technologies" />
+              <Image src={Postgre} alt="postgre" className="x-technologies" />
+              <Image src={ReactJs} alt="react" className="x-technologies" />
+              <Image src={Mui} alt="mui" className="x-technologies" />
+              <Image src={NestJs} alt="nest" className="x-technologies" />
             </Div>
           </Div>
         </Div>
@@ -387,11 +389,11 @@ const MyWork = () => {
               color="palette-2"
               text="Technologies Used"
             />
-            <Div flex row gap={2}>
-              <Image src={Nextjs} alt="nextjs" />
-              <Image src={MySql} alt="mysql" />
-              <Image src={ReactJs} alt="react" />
-              <Image src={FramerMotion} alt="framer-motion" />
+            <Div className="x-technology-used" flex row gap={2}>
+              <Image src={Nextjs} alt="nextjs" className="x-technologies" />
+              <Image src={MySql} alt="mysql" className="x-technologies" />
+              <Image src={ReactJs} alt="react" className="x-technologies" />
+              <Image src={FramerMotion} alt="framer-motion" className="x-technologies" />
             </Div>
           </Div>
         </Div>

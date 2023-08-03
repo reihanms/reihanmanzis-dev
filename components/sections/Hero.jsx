@@ -23,43 +23,32 @@ const Hero = () => {
     threshold: 0.2, // Adjust the threshold value as needed (0 to 1)
   });
 
-  useEffect(() => {
-    if (inView) {
-      // Animate the element when it comes into view
-      controls.start({
-        opacity: 1,
-        x: 0,
-        scale: 1,
-      });
-    }
-  }, [controls, inView]);
-
   return (
     <Div className="x-hero-section">
       <Container>
         <Div className="x-content">
           <Div flex centerBetween>
             <motion.div
-              ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 0.5, duration : 1.5 }} 
             >
               <Heading
                 size="h2"
+                mobileSize="10px"
                 className="font-fredoka-semibold"
                 color="palette-1"
                 text="reihan manzis."
               />
             </motion.div>
             <motion.div
-              ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 0.5, duration : 1.5 }} 
             >
               <Heading
                 size="h2"
+                mobileSize="10px"
                 className="font-fredoka-semibold"
                 color="palette-1"
                 text="Full-Stack Web Developer."
@@ -68,9 +57,8 @@ const Hero = () => {
           </Div>
           <Spacer size={10} />
           <motion.div
-            ref={ref}
             initial={{ opacity: 0, x: -300 }} 
-            animate={controls} 
+            animate={{opacity : 1, x : 0}} 
             transition={{ duration: 0.5 }} 
           >
             <Heading
@@ -102,11 +90,11 @@ const Hero = () => {
             </Paragraph>
           </motion.div>
           <Spacer size={20} />
-          <Div flex row gap={3}>
+          <Div className="x-skillset-container" flex row gap={3}>
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 2.5, duration : 0.2 }} 
             >
               <Image src={Nextjs} alt="nextjs" className="x-skillset" />
@@ -114,7 +102,7 @@ const Hero = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 2.7, duration : 0.2 }} 
             >
               <Image src={Reactjs} alt="nextjs" className="x-skillset" />
@@ -122,7 +110,7 @@ const Hero = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 2.8, duration : 0.2 }} 
             >
               <Image src={Vue} alt="nextjs" className="x-skillset" />
@@ -130,7 +118,7 @@ const Hero = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 2.9, duration : 0.2 }} 
             >
               <Image src={Scss} alt="nextjs" className="x-skillset" />
@@ -138,7 +126,7 @@ const Hero = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 3, duration : 0.2 }} 
             >
               <Image src={Tailwind} alt="nextjs" className="x-skillset" />
@@ -146,7 +134,7 @@ const Hero = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 3.1, duration : 0.2 }} 
             >
               <Image src={MaterialUi} alt="nextjs" className="x-skillset" />
@@ -154,7 +142,7 @@ const Hero = () => {
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -300 }} 
-              animate={controls} 
+              animate={{opacity : 1, x : 0}} 
               transition={{ delay: 3.2, duration : 0.2 }} 
             >
               <Image src={Laravel} alt="nextjs" className="x-skillset" />
